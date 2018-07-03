@@ -1,0 +1,11 @@
+!Read the topology (library) file/files
+rt init.top
+
+!Read the trajectory
+!trajectory start.dcd
+tr relax7.dcd
+y
+rf 99
+wp frame99.pdb
+y
+q

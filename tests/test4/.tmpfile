@@ -1,0 +1,58 @@
+ PyMOL(TM) Molecular Graphics System, Version 1.8.1.0.
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+ 
+    Created by Warren L. DeLano, Ph.D. 
+ 
+    PyMOL is user-supported open-source software.  Although some versions
+    are freely available, PyMOL is not in the public domain.
+ 
+    If PyMOL is helpful in your work or study, then please volunteer 
+    support for our ongoing efforts to create open and affordable scientific
+    software by purchasing a PyMOL Maintenance and/or Support subscription.
+
+    More information can be found at "http://www.pymol.org".
+ 
+    Enter "help" for a list of commands.
+    Enter "help <command-name>" for information on a specific command.
+
+ Hit ESC anytime to toggle between text and graphics.
+
+ Detected OpenGL version 2.0 or greater. Shaders available.
+ Detected GLSL version 1.20.
+ OpenGL graphics engine:
+  GL_VENDOR:   NVIDIA Corporation
+  GL_RENDERER: NVIDIA GeForce GT 750M OpenGL Engine
+  GL_VERSION:  2.1 NVIDIA-10.4.2 310.41.35f01
+ Detected 8 CPU cores.  Enabled multithreaded rendering.
+PyMOL>print "PowerMate Dial interface has been enabled"
+PowerMate Dial interface has been enabled
+PyMOL>bg white
+PyMOL>set_color carbon= [0.0 , 0.0 , 0.0]
+PyMOL>set_color nitrogen= [0.0 , 0.0 , 1.0]
+PyMOL>set_color oxygen= [1.0 , 0.0 , 0.0]
+PyMOL>set_color phosphorus= [1.0 , 1.0 , 0.0]
+PyMOL>set orthoscopic, 1
+PyMOL>set label_color, blue
+PyMOL>set label_size, 16
+PyMOL>alias labeling, set label_size, 20; set label_position, [0, 1.2, 0]; label all, "%s%s" % (name,ID)
+PyMOL>alias indentlabels, set label_position, [0, 1.2, 0]
+PyMOL>set sphere_scale, 0.15
+PyMOL>print "Finished reading ~/.pymolrc"
+Finished reading ~/.pymolrc
+ CmdLoad: "/Users/esguerra/qtests/hydration/sodium3/sodium.pdb" loaded as "sodium".
+PyMOL>space cmyk
+ Color: loaded table '/sw/lib/python2.7/site-packages/pymol/data/pymol/cmyk.png'.
+PyMOL>set valence, 0.1
+PyMOL>set sphere_scale, 0.8
+PyMOL>set sphere_quality, 2
+PyMOL>set stick_radius, 0.17
+PyMOL>set stick_quality, 10
+PyMOL>set defer_builds_mode, 3
+PyMOL>set surface_quality, 1
+PyMOL>set spec_power, 250
+PyMOL>set spec_reflect, 2
+PyMOL>set cartoon_fancy_helices, 1
+PyMOL>gui 
+PyMOL>set internal_gui=1 
+ PyMOL: abrupt program termination.
