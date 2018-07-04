@@ -3854,9 +3854,9 @@ subroutine readpdb()
 ! changed to 1x
 !10    format(12x,a5,a3,2x,i4,4x,3f8.3)
 !10 format(11x,1x,a4,1x,1x,a4,i4,4x,3f8.3)
-! Corrected string formatting, following the all read format for readability
-! It is btw NOT necesarry to have four letter amino acid code, at all, ever.
-10  format(11x,1x,a4,1x,a4,1x,i4,1x,3x,3f8.3)
+!! Corrected the line so it represents 
+10 format(12x,a4,1x,a4,1x,i4,4x,3f8.3)
+
   !       progress output formats
 20 format('molecule ',i4,': ',a4,i5)
 21 format(' - ',a4,i5)
@@ -6079,8 +6079,10 @@ subroutine writepdb
 ! TODO: Fix writing of chainID, requires chain info in topology.
 ! (PDBtype,atomNr,atomName,resName,resNr,coords)
 !10      format(a6,i5,1x,a5,a3,2x,i4,4x,3f8.3)  pre-Geir Isaksen suggestion.
-!10 format(     a6,i5,1x,a5,a4,1x,i4,4x,3f8.3) ! four letter residue names
-10 format(a6,i5,1x,a4,1x,a4,1x,i4,4x,3f8.3) ! four letter residue names
+!10 format(a6,i5,1x,a4,a5,1x,i4,4x,3f8.3) ! four letter residue names
+10 format(a6,i5,1x,a4,1x,a4,1x,i4,4x,3f8.3)
+
+
 11      format(a6,11x,a4,1x,i4) !For TER cards
   iat = 0
   imol = 1
